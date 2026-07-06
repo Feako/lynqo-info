@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lynqo Terms of Use</title>
+    <style>
+        :root {
+            color-scheme: light;
+            --page: #f6f4ed;
+            --card: rgba(255, 255, 255, 0.88);
+            --card-border: rgba(31, 41, 55, 0.08);
+            --text: #1e2430;
+            --muted: #667085;
+            --accent: #2d706a;
+            --accent-soft: rgba(45, 112, 106, 0.1);
+            --shadow: 0 22px 60px rgba(41, 51, 68, 0.08);
+            --radius: 28px;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            background:
+                radial-gradient(circle at top left, rgba(160, 197, 192, 0.22), transparent 32%),
+                linear-gradient(180deg, #fbfaf7 0%, var(--page) 100%);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .shell {
+            width: min(760px, calc(100vw - 32px));
+            margin: 0 auto;
+            padding: 24px 0 40px;
+        }
+
+        .hero,
+        .section-card,
+        .footer-card {
+            background: var(--card);
+            border: 1px solid var(--card-border);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            backdrop-filter: blur(18px);
+            -webkit-backdrop-filter: blur(18px);
+        }
+
+        .hero {
+            padding: 28px;
+        }
+
+        .eyebrow {
+            display: inline-flex;
+            padding: 8px 12px;
+            border-radius: 999px;
+            background: var(--accent-soft);
+            color: var(--accent);
+            font-size: 0.92rem;
+            font-weight: 600;
+        }
+
+        h1,
+        h2 {
+            margin: 0;
+            line-height: 1.15;
+        }
+
+        h1 {
+            margin-top: 16px;
+            font-size: clamp(2rem, 5vw, 3rem);
+            letter-spacing: -0.04em;
+        }
+
+        .subtitle {
+            margin: 14px 0 0;
+            color: var(--muted);
+            font-size: 1.04rem;
+        }
+
+        .meta {
+            margin-top: 18px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            color: var(--muted);
+            font-size: 0.95rem;
+        }
+
+        .nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 22px;
+        }
+
+        .nav a {
+            display: inline-flex;
+            padding: 10px 14px;
+            border-radius: 999px;
+            background: rgba(255, 255, 255, 0.7);
+            border: 1px solid rgba(31, 41, 55, 0.08);
+            color: var(--text);
+            font-weight: 600;
+        }
+
+        main {
+            margin-top: 18px;
+            display: grid;
+            gap: 14px;
+        }
+
+        .section-card {
+            padding: 24px;
+        }
+
+        .section-card p {
+            margin: 12px 0 0;
+            color: var(--muted);
+        }
+
+        footer {
+            margin-top: 18px;
+        }
+
+        .footer-card {
+            padding: 18px 22px;
+            color: var(--muted);
+            font-size: 0.95rem;
+            text-align: center;
+        }
+
+        @media (max-width: 640px) {
+            .shell {
+                width: min(760px, calc(100vw - 20px));
+                padding-top: 14px;
+                padding-bottom: 24px;
+            }
+
+            .hero,
+            .section-card {
+                padding: 22px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="shell">
+        <header class="hero">
+            <div class="eyebrow">Lynqo Legal</div>
+            <h1>Lynqo Terms of Use</h1>
+            <p class="subtitle">Manual creation stays primary in Lynqo, while AI helpers assist with filling one editable item when your input is messy.</p>
+            <div class="meta">
+                <span>Last updated: <time datetime="2026-07-02">July 2, 2026</time></span>
+            </div>
+            <nav class="nav" aria-label="Legal navigation">
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="support.html">Help &amp; Support</a>
+            </nav>
+        </header>
+
+        <main>
+            <section class="section-card">
+                <h2>Using Lynqo</h2>
+                <p>Lynqo is provided to help you create, review, and manage personal or work-related action items quickly. You are responsible for reviewing saved content before relying on it.</p>
+            </section>
+
+            <section class="section-card">
+                <h2>AI Helper Features</h2>
+                <p>Smart Capture and Voice + AI are designed to help fill one editable item from messy input. These features may depend on supported Apple Intelligence capabilities, device state, language, and permissions. Generated results should always be reviewed by you before saving or acting on them.</p>
+            </section>
+
+            <section class="section-card">
+                <h2>Availability</h2>
+                <p>Some features may be unavailable on certain devices, iOS versions, or languages. Lynqo may also temporarily limit AI helper access while the device is preparing required system models or if a needed permission is turned off.</p>
+            </section>
+
+            <section class="section-card">
+                <h2>Reminders and Notifications</h2>
+                <p>Reminder notifications depend on local notification permission. Saving a reminder item does not guarantee an alert will fire if notifications are disabled, Focus settings block delivery, or the date is changed later.</p>
+            </section>
+
+            <section class="section-card">
+                <h2>Changes</h2>
+                <p>Lynqo may evolve over time as features, pricing, and supported devices change. Continued use of the app after future updates means you accept the then-current product behavior and terms shared with the release.</p>
+            </section>
+
+            <section class="section-card">
+                <h2>Contact</h2>
+                <p>Questions about these terms: <a href="mailto:SUPPORT_EMAIL">SUPPORT_EMAIL</a></p>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-card">
+                © 2026 Lynqo
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
