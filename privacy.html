@@ -132,6 +132,21 @@
             color: var(--muted);
         }
 
+        .section-card ul {
+            margin: 12px 0 0;
+            padding-left: 20px;
+            color: var(--muted);
+        }
+
+        .section-card li + li {
+            margin-top: 6px;
+        }
+
+        .section-card h3 {
+            margin: 18px 0 0;
+            font-size: 1.02rem;
+        }
+
         footer {
             margin-top: 18px;
         }
@@ -162,9 +177,9 @@
         <header class="hero">
             <div class="eyebrow">Lynqo Legal</div>
             <h1>Lynqo Privacy Policy</h1>
-            <p class="subtitle">Lynqo helps you turn rough thoughts, errands, follow-ups, receipts, and reminders into saved action items.</p>
+            <p class="subtitle">Lynqo keeps your items on your iPhone. There is no account, no server, no analytics, and no advertising.</p>
             <div class="meta">
-                <span>Last updated: <time datetime="2026-07-02">July 2, 2026</time></span>
+                <span>Last updated: <time datetime="2026-10-18">October 18, 2026</time></span>
             </div>
             <nav class="nav" aria-label="Legal navigation">
                 <a href="terms.html">Terms of Use</a>
@@ -174,44 +189,89 @@
 
         <main>
             <section class="section-card">
-                <h2>Overview</h2>
-                <p>Lynqo is designed around on-device storage and Apple-provided system features. This policy explains what Lynqo stores, how optional helper features work, and what choices you have while using the app.</p>
+                <h2>Summary</h2>
+                <p>The Lynqo app does not collect personal data. Everything you create stays on your device, and the developer has no access to it. AI helpers run on your iPhone with Apple Intelligence.</p>
             </section>
 
             <section class="section-card">
-                <h2>Information Lynqo Stores</h2>
-                <p>Lynqo stores the items you create, capture notes, reminder dates, and app preferences on your device. If you attach a screenshot, Lynqo stores that capture so the original input is preserved alongside the saved result.</p>
+                <h2>Who We Are</h2>
+                <p>Lynqo is developed and published by Aliaksandr Mazurau, a sole trader, who is responsible for this app and for any personal data described in this policy. Contact: <a href="mailto:au.mazurau@gmail.com">au.mazurau@gmail.com</a></p>
             </section>
 
             <section class="section-card">
-                <h2>Voice, Speech, and Screenshots</h2>
-                <p>If you choose to use voice capture, Lynqo asks for microphone and speech recognition permission so it can turn your speech into editable text. If you add a screenshot, Lynqo may read text from the image to help fill one item. In the current version, raw audio is not kept after transcription finishes.</p>
+                <h2>What Stays on Your Device</h2>
+                <ul>
+                    <li>Items you create: titles, notes, item type, amounts, due dates, and reminder dates.</li>
+                    <li>The original input you used with an AI helper: rough text, a voice transcript, or a screenshot you chose to attach.</li>
+                    <li>App preferences, such as whether you finished onboarding.</li>
+                </ul>
+                <p>This data is stored locally on your iPhone. It is not sent to the developer or to any third party. If you use iCloud Backup or a computer backup, iOS may include Lynqo's data in that backup, as with any other app.</p>
             </section>
 
             <section class="section-card">
-                <h2>Notifications</h2>
-                <p>If you turn on notifications, Lynqo can schedule local reminder alerts for saved reminder items. Reminder scheduling stays on your device and can be changed at any time in iOS Settings.</p>
+                <h2>AI Helpers (Smart Capture and Voice + AI)</h2>
+                <p>Smart Capture and Voice + AI use Apple's on-device Foundation Models to turn your input into one editable item. This processing happens on your iPhone. Lynqo does not send your notes, transcripts, or screenshots to any server.</p>
             </section>
 
             <section class="section-card">
-                <h2>Data Sharing</h2>
-                <p>The current Lynqo app does not include account creation, third-party ads, or analytics SDKs. The app uses Apple system frameworks for features such as speech recognition, notifications, and on-device AI helper readiness.</p>
+                <h2>Voice and Speech Recognition</h2>
+                <p>If you use voice capture, Lynqo asks for microphone and speech recognition permission. Your recording is kept only until it has been turned into text and is then deleted. Lynqo uses Apple's speech recognition, on device whenever your iPhone supports it. If on-device recognition is not available for your language, iOS may send the audio to Apple to transcribe it, under <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a>. The developer never receives your audio or transcripts.</p>
             </section>
 
             <section class="section-card">
-                <h2>Your Choices</h2>
-                <p>You can keep using manual item creation even if you do not grant voice or notification permissions. You can also review or remove saved items directly in the app.</p>
+                <h2>Screenshots and Photos</h2>
+                <p>Lynqo only sees an image you pick yourself with the iOS photo picker. It does not get access to your photo library. Text in the image is read on your device to help fill the item, and the image is saved with that item so you can see the original later.</p>
             </section>
 
             <section class="section-card">
-                <h2>Contact</h2>
-                <p>For privacy questions, contact: <a href="mailto:au.mazurau@gmail.com">au.mazurau@gmail.com</a></p>
+                <h2>Reminders</h2>
+                <p>Reminder alerts are local notifications scheduled on your iPhone. You can turn them off at any time in iOS Settings.</p>
+            </section>
+
+            <section class="section-card">
+                <h2>Purchases</h2>
+                <p>Lynqo Pro subscriptions are sold and processed by Apple through the App Store. The developer does not receive your name, email, or payment details. Lynqo only checks on your device, using Apple's StoreKit, whether your Apple Account has an active subscription. Apple handles purchase data under its own privacy policy.</p>
+            </section>
+
+            <section class="section-card">
+                <h2>Contacting Support</h2>
+                <p>If you email support, the developer receives your email address, your message, and anything you choose to attach, such as a screenshot. This is used only to answer you and fix the problem you report. It is not used for marketing or shared with anyone, apart from the email provider that delivers the message. Support emails are deleted once they are no longer needed, and no later than two years after the conversation ends. The legal basis is the developer's legitimate interest in answering your request (GDPR Article 6(1)(f)).</p>
+            </section>
+
+            <section class="section-card">
+                <h2>What Lynqo Does Not Do</h2>
+                <ul>
+                    <li>No user accounts or sign-in.</li>
+                    <li>No analytics, crash-reporting, or advertising SDKs.</li>
+                    <li>No tracking across apps or websites, and no sale or sharing of data.</li>
+                    <li>No server that stores your content.</li>
+                </ul>
+            </section>
+
+            <section class="section-card">
+                <h2>Keeping and Deleting Your Data</h2>
+                <p>Your data stays until you delete it. You can delete any item in the app. Deleting Lynqo from your iPhone removes all of its data from the device. Backups follow your iCloud or computer backup settings.</p>
+            </section>
+
+            <section class="section-card">
+                <h2>Your Rights</h2>
+                <p>The app does not send your data to the developer, so the content you create is under your control on your device. If you have emailed support, you can ask for a copy of that correspondence or for it to be deleted. If you have a privacy question or request, including under the GDPR, write to <a href="mailto:au.mazurau@gmail.com">au.mazurau@gmail.com</a>. You also have the right to complain to your local data protection authority.</p>
+            </section>
+
+            <section class="section-card">
+                <h2>Children</h2>
+                <p>Lynqo is a general productivity app and is not directed at children. It does not knowingly collect data from anyone, including children.</p>
+            </section>
+
+            <section class="section-card">
+                <h2>Changes</h2>
+                <p>If this policy changes, the updated version will be published on this page with a new date. If an update ever introduces data collection, it will be described here and in the App Store privacy details before it ships.</p>
             </section>
         </main>
 
         <footer>
             <div class="footer-card">
-                © 2026 Lynqo
+                © 2026 Aliaksandr Mazurau
             </div>
         </footer>
     </div>
