@@ -122,6 +122,21 @@
             color: var(--muted);
         }
 
+        .section-card ul {
+            margin: 12px 0 0;
+            padding-left: 20px;
+            color: var(--muted);
+        }
+
+        .section-card li + li {
+            margin-top: 6px;
+        }
+
+        .section-card h3 {
+            margin: 18px 0 0;
+            font-size: 1.02rem;
+        }
+
         footer {
             margin-top: 18px;
         }
@@ -152,7 +167,7 @@
         <header class="hero">
             <div class="eyebrow">Lynqo Support</div>
             <h1>Lynqo Help &amp; Support</h1>
-            <p class="subtitle">Lynqo is a manual-first app for turning rough thoughts, errands, follow-ups, receipts, and reminders into one saved action fast. AI helpers are there when speaking, typing a rough note, or attaching a screenshot is faster than starting clean.</p>
+            <p class="subtitle">Lynqo turns tasks, reminders, follow-ups, notes, and expenses into saved items fast. Type them yourself, or let the AI helpers fill them from a rough note, your voice, or a screenshot.</p>
             <nav class="nav" aria-label="Support navigation">
                 <a href="privacy.html">Privacy Policy</a>
                 <a href="terms.html">Terms of Use</a>
@@ -162,39 +177,66 @@
         <main>
             <section class="section-card">
                 <h2>Getting Started</h2>
-                <p>Use New Item when you already know what you want to save. Use Smart Capture or Voice + AI when speaking, typing rough notes, or attaching a screenshot is faster than starting from a blank form.</p>
+                <ul>
+                    <li>Tap <strong>+</strong> on the timeline to create an item yourself. This is free.</li>
+                    <li>Use <strong>Voice + AI</strong> on the timeline to say what you need. Lynqo fills one item for you to review.</li>
+                    <li>Use <strong>Smart Capture</strong> in New Item to paste a rough note or attach a screenshot, such as a chat, receipt, or invoice.</li>
+                    <li>Review the suggested fields, adjust anything, and save. Saved items live on your timeline, where you can edit, complete, or delete them.</li>
+                </ul>
             </section>
 
             <section class="section-card">
-                <h2>AI Helper Availability</h2>
-                <p>AI helper features depend on Apple Intelligence support, a supported language, and the current readiness of required system models. If Lynqo shows that AI helpers are unavailable, you can still create and manage items manually.</p>
+                <h2>AI Helper Requirements</h2>
+                <p>Smart Capture and Voice + AI run on your iPhone with Apple Intelligence. They need:</p>
+                <ul>
+                    <li>An iPhone that supports Apple Intelligence, running iOS 26 or later.</li>
+                    <li>Apple Intelligence turned on in Settings &gt; Apple Intelligence &amp; Siri.</li>
+                    <li>A device and Siri language that Apple Intelligence supports.</li>
+                    <li>Apple Intelligence models downloaded. Right after you turn it on, this can take a while on Wi-Fi.</li>
+                </ul>
+                <p>Lynqo shows what is missing in Settings &gt; Status &amp; Setup. You can always create and manage items yourself.</p>
+            </section>
+
+            <section class="section-card">
+                <h2>Lynqo Pro</h2>
+                <ul>
+                    <li>Lynqo Pro unlocks Smart Capture and Voice + AI, billed monthly or yearly. New subscribers can get a 7-day free trial, once per Apple Account.</li>
+                    <li><strong>Restore:</strong> on a new iPhone or after reinstalling, open Lynqo &gt; Settings &gt; Restore Purchases, signed in with the same Apple Account.</li>
+                    <li><strong>Cancel or change plan:</strong> Lynqo &gt; Settings &gt; Manage Subscription, or iOS Settings &gt; [your name] &gt; Subscriptions. Cancel at least 24 hours before the trial or period ends to avoid being charged.</li>
+                    <li><strong>Refunds:</strong> Apple processes payments, so refunds are requested from Apple at <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.</li>
+                </ul>
             </section>
 
             <section class="section-card">
                 <h2>Permissions</h2>
-                <p>Voice features need microphone and speech recognition permission. Reminder alerts need notification permission. If permission is denied, Lynqo explains what is unavailable and can take you to the relevant iOS Settings screen when possible.</p>
-            </section>
-
-            <section class="section-card">
-                <h2>Saving and Editing</h2>
-                <p>Lynqo is built around one-item creation. Review AI-filled content before saving it, especially titles, notes, amounts, and due dates. Saved items can be edited later from the timeline.</p>
+                <ul>
+                    <li><strong>Microphone and Speech Recognition</strong> are needed only for voice capture.</li>
+                    <li><strong>Notifications</strong> are needed only for reminder alerts.</li>
+                    <li>Screenshots are chosen with the iOS photo picker, so Lynqo never needs access to your whole library.</li>
+                </ul>
+                <p>If you denied a permission, Lynqo explains what is unavailable and can open iOS Settings for you.</p>
             </section>
 
             <section class="section-card">
                 <h2>Reminders</h2>
-                <p>Reminder items still save even if notifications are off. If alerts are important for your workflow, turn notifications on in Settings and verify the reminder date before leaving the item screen.</p>
+                <p>Reminder items save even with notifications off, but they won't alert you. To get alerts, allow notifications for Lynqo, check that Focus doesn't silence it, and confirm the date and time before you leave the item.</p>
+            </section>
+
+            <section class="section-card">
+                <h2>Your Data</h2>
+                <p>Your items stay on your iPhone. There is no account and no sync between devices. iCloud Backup or a computer backup can include them, and deleting the app removes them. See the <a href="privacy.html">Privacy Policy</a> for details.</p>
             </section>
 
             <section class="section-card">
                 <h2>Contact Support</h2>
                 <p>Email: <a href="mailto:au.mazurau@gmail.com">au.mazurau@gmail.com</a></p>
-                <p>We’ll do our best to respond as soon as possible.</p>
+                <p>Please include your iPhone model, iOS version, and a short description or screenshot of the problem. We reply as soon as we can, usually within a few days.</p>
             </section>
         </main>
 
         <footer>
             <div class="footer-card">
-                © 2026 Lynqo
+                © 2026 Aliaksandr Mazurau
             </div>
         </footer>
     </div>
